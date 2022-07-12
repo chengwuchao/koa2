@@ -10,6 +10,8 @@
     "koa": "./node_modules/.bin/runkoa bin/www"
   },
   "dependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-register": "^6.26.0",
     "debug": "^4.1.1",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
@@ -20,7 +22,9 @@
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "koa-views": "^6.2.0",
+    "koa2-cors": "^2.0.6",
     "log4js": "^6.3.0",
+    "mongoose": "^6.4.3",
     "pug": "^2.0.3",
     "runkoa": "^1.5.9"
   },

@@ -11,3 +11,8 @@ exports.getUser = async (ctx, next) => {
 exports.registerUser = async (ctx, next) => {
   console.log('registerUser', ctx.request.body);
 };
+
+const mongoose = require('mongoose');
+mongoose.connect('');
+
+exports.queryUsers = function () {};

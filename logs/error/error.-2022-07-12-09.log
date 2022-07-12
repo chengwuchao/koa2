@@ -1,0 +1,72 @@
+[2022-07-12T09:17:56.710] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /user/
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-12T09:18:01.616] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /user/bar
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-12T09:18:04.014] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /user/bar
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-12T09:18:11.249] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users
+request client ip:  ::1
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+"this is a users response!"
+*************** response log end ***************
+
+[2022-07-12T09:18:14.098] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/bar
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 200
+response body: 
+"this is a users/bar response"
+*************** response log end ***************
+
+[2022-07-12T09:31:28.046] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/getUser
+request client ip:  ::1
+request query:  {}
+response time: 2
+response status: 200
+response body: 
+{"username":"阿，老爸","age":55}
+*************** response log end ***************
+

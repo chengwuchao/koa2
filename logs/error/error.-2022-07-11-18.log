@@ -1,0 +1,216 @@
+[2022-07-11T18:10:37.962] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:11:51.781] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:11:52.751] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:11:52.940] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:11:53.407] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:11:53.781] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:11:57.134] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:11:57.799] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:11:57.978] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:12:00.681] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::1
+request query:  {}
+response time: 262
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+
+[2022-07-11T18:12:12.876] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /bar
+request client ip:  ::1
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:12:20.088] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::1
+request query:  {}
+response time: 14
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+
+[2022-07-11T18:12:32.300] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/bar
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 200
+response body: 
+"this is a users/bar response"
+*************** response log end ***************
+
+[2022-07-11T18:13:04.946] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /json
+request client ip:  ::1
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"title":"koa2 json"}
+*************** response log end ***************
+
+[2022-07-11T18:13:34.657] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:13:36.863] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:13:37.945] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2022-07-11T18:13:38.108] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /getUser
+request client ip:  ::1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
