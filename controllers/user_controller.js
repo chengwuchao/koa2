@@ -13,6 +13,8 @@ exports.registerUser = async (ctx, next) => {
 };
 
 const mongoose = require('mongoose');
-mongoose.connect('');
+mongoose.connect(
+  'mongodb://admin:123456@47.100.224.4:27017/demo?authSource=admin'
+);
 
 exports.queryUsers = function () {};
