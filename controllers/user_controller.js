@@ -12,9 +12,21 @@ exports.registerUser = async (ctx, next) => {
   console.log('registerUser', ctx.request.body);
 };
 
-const mongoose = require('mongoose');
-mongoose.connect(
-  'mongodb://admin:123456@47.100.224.4:27017/demo?authSource=admin'
-);
+exports.queryUsers = function () {
+  return new Promise((reslove, reject) => {
+    const mongoose = require('mongoose');
+    mongoose.connect(
+      'mongodb://admin:123456@47.100.224.4:27017/info?authSource=admin'
+    );
 
-exports.queryUsers = function () {};
+    var kittySchema = mongoose.Schema({
+      name: String,
+      age: String,
+    });
+
+    var infoModel = mongoose.model('info', kittySchema);
+    infoModel.find().exec((err, docs) => {
+      reslove(docs);
+    });
+  });
+};
