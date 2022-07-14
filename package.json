@@ -25,10 +25,10 @@
     "koa2-cors": "^2.0.6",
     "log4js": "^6.3.0",
     "mongoose": "^6.4.3",
-    "pug": "^2.0.3",
-    "runkoa": "^1.5.9"
+    "pug": "^3.0.2",
+    "runkoa": "^1.5.2"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^2.0.19"
   }
 }
