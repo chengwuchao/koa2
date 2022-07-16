@@ -6,10 +6,21 @@ const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser');
 // const logger = require('koa-logger')
 const logUtil = require('./utils/log_util');
+const mongoose = require('mongoose');
+const config = require('./config');
 
 import index from './routes/index';
 import users from './routes/users';
-import api from './routes/users_router';
+import api from './routes/api';
+
+// 连接 mongodb
+mongoose.connect(
+  config.dbs,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  function () {
+    console.log('connection is success');
+  }
+);
 
 // error handler
 onerror(app);
