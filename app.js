@@ -9,9 +9,9 @@ const logUtil = require('./utils/log_util');
 const mongoose = require('mongoose');
 const config = require('./config');
 
-import index from './routes/index';
-import users from './routes/users';
-import api from './routes/api';
+const index = require('./routes/index');
+const users = require('./routes/users');
+const api = require('./routes/api');
 
 // 连接 mongodb
 mongoose.connect(
