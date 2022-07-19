@@ -14,13 +14,13 @@ const users = require('./routes/users');
 const api = require('./routes/api');
 
 // 连接 mongodb
-// mongoose.connect(
-//   config.dbs,
-//   { useNewUrlParser: true, useUnifiedTopology: true },
-//   function () {
-//     console.log('connection is success');
-//   }
-// );
+mongoose.connect(
+  config.dbs,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  function () {
+    console.log('connection is success');
+  }
+);
 
 // error handler
 onerror(app);
