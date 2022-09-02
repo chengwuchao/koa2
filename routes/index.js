@@ -30,12 +30,15 @@ router.get('/img/:id', async (ctx, next) => {
   const height =
     idArr.find((idr) => idr.includes('h'))?.replace('h', '') || 100;
   const bg =
-    idArr.find((idr) => idr.includes('bg-'))?.replace('bg-', '') || 'red';
+    idArr
+      .find((idr) => idr.includes('bg'))
+      ?.replace('bg', '')
+      .replace('$', '#') || 'red';
 
   const { createCanvas } = require('canvas');
   const canvas = createCanvas(Number(width), Number(height));
   const context = canvas.getContext('2d');
-  context.fillStyle = `#${bg}`;
+  context.fillStyle = bg;
   context.fillRect(0, 0, Number(width), Number(height));
   const src = canvas.toBuffer();
   ctx.response.set('content-type', 'image/png');
