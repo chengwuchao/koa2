@@ -22,27 +22,32 @@ router.get('/json', async (ctx, next) => {
 });
 
 router.get('/img/:id', async (ctx, next) => {
-  console.log(ctx.params);
-  let { id = '' } = ctx.params;
-  const idArr = id.split('_');
-  const [w_str, h_str] = [
-    idArr.find((item, index) => item.includes('w')),
-    idArr.find((item, index) => item.includes('h')),
-  ];
+  try {
+    console.log(ctx.params);
 
-  const width = w_str ? w_str.replace('w', '') : 100;
-  const height = h_str ? h_str.replace('h', '') : 100;
-  const bg_str = idArr.find((idr) => idr.includes('bg')) || '';
-  const bg = bg_str.replace('bg', '').replace('$', '#') || 'red';
+    let { id = '' } = ctx.params;
+    const idArr = id.split('_');
+    const [w_str, h_str] = [
+      idArr.find((item, index) => item.includes('w')),
+      idArr.find((item, index) => item.includes('h')),
+    ];
 
-  const { createCanvas } = require('canvas');
-  const canvas = createCanvas(Number(width), Number(height));
-  const context = canvas.getContext('2d');
-  context.fillStyle = bg;
-  context.fillRect(0, 0, Number(width), Number(height));
-  const src = canvas.toBuffer();
-  ctx.response.set('content-type', 'image/png');
-  ctx.body = src;
+    const width = w_str ? w_str.replace('w', '') : 100;
+    const height = h_str ? h_str.replace('h', '') : 100;
+    const bg_str = idArr.find((idr) => idr.includes('bg')) || '';
+    const bg = bg_str.replace('bg', '').replace('$', '#') || 'red';
+
+    const { createCanvas } = require('canvas');
+    const canvas = createCanvas(Number(width), Number(height));
+    const context = canvas.getContext('2d');
+    context.fillStyle = bg;
+    context.fillRect(0, 0, Number(width), Number(height));
+    const src = canvas.toBuffer();
+    ctx.response.set('content-type', 'image/png');
+    ctx.body = src;
+  } catch (e) {
+    console.log(e);
+  }
 });
 
 module.exports = router;
