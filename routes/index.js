@@ -23,12 +23,15 @@ router.get('/json', async (ctx, next) => {
 
 router.get('/img/:id', async (ctx, next) => {
   console.log(ctx.params);
-  let { id } = ctx.params;
-  id = id || '';
+  let { id = '' } = ctx.params;
   const idArr = id.split('_');
-  const width = idArr.find((idr) => idr.includes('w'))?.replace('w', '') || 100;
-  const height =
-    idArr.find((idr) => idr.includes('h'))?.replace('h', '') || 100;
+  const [w_str, h_str] = [
+    idArr.find((item, index) => item.includes('w')),
+    idArr.find((item, index) => item.includes('h')),
+  ];
+
+  const width = w_str ? w_str.replace('w', '') : 100;
+  const height = h_str ? h_str.replace('h', '') : 100;
   const bg =
     idArr
       .find((idr) => idr.includes('bg'))

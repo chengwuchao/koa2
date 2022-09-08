@@ -6,6 +6,7 @@
 console.log('process.env.NODE_ENV=' + process.env.NODE_ENV);
 
 var app = require('../app');
+console.log(app);
 var debug = require('debug')('demo:server');
 var http = require('http');
 var config = require('../config');
