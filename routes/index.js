@@ -43,7 +43,9 @@ router.get('/img/:id', async (ctx, next) => {
     context.fillStyle = bg;
     context.fillRect(0, 0, Number(width), Number(height));
     const src = canvas.toBuffer();
-    ctx.response.set('content-type', 'image/png');
+    // 设置向响应头
+    ctx.response.set('content-type', 'application/octet-stream');
+    ctx.response.set('filename', 'wuchao.png');
     ctx.body = src;
   } catch (e) {
     console.log(e);
